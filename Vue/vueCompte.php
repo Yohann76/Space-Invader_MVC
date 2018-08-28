@@ -1,7 +1,5 @@
 <?php $this->titre = "Compte"; ?>
 
-<!-- Page a propos transformer en mon profil --> 
-
 <div id="blanc"> 
 <h2>   Bonjour <?php  echo $_SESSION['loginMembre'] ;?> comment allez vous ? </h2> 
 <p> Nous sommes ravis de vous revoir ! </p>  

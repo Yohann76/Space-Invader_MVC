@@ -1,9 +1,6 @@
 <?php
 
 require_once 'Controleur/ControleurAccueil.php';
-//require_once 'Controleur/ControleurChapitre.php';
-//require_once 'Controleur/ControleurAdmin.php';
-
 require_once 'Vue/Vue.php';
 class Routeur {
 
@@ -19,8 +16,6 @@ class Routeur {
     public function routerRequete() {
             try {
                 if (isset($_GET['action'])) {
-
-
                     if ($_GET['action'] == 'getScore') {  
                         $this->ctrlAccueil->getScore();        
                     }
@@ -28,43 +23,30 @@ class Routeur {
                     if ($_GET['action'] == 'Connexion') {  
                         $this->ctrlAccueil->Connexion();        
                     }
-
                     if ($_GET['action'] == 'ConnexionMembre') {  
                         $this->ctrlAccueil->TestConnexionMembre();        
                     }
-
                     if ($_GET['action'] == 'Inscription') {  // Affiche la vue Inscription
                         $this->ctrlAccueil->Inscription(); 
                     }
-
                     if ($_GET['action'] == 'InscriptionEnvoie') {  // Au bouton on envoie le form d'inscription BDD 
                     $this->ctrlAccueil->EnvoieInscriptionMembre() ;
                     }
-
-
                     if ($_GET['action'] == 'Scores') {  // Affiche la vue Score 
                         $this->ctrlAccueil->Scores(); 
                     }
-
                     if ($_GET['action'] == 'Compte') {  // Affiche la vue Compte
                         $this->ctrlAccueil->Compte(); 
                     }
-
                     // On se deconecte avec l'action Deconnexion 
                     if ($_GET['action'] == 'Deconnexion') {  
                         $this->ctrlAccueil->DeconnexionAdmin(); 
                     }
-                } // Fin du grand grand if 
-                
-                
-                
+                } 
                 else {  // aucune action définie : affichage de l'accueil
                     $this->ctrlAccueil->accueil();
                 }
-    
             }  
-
-
         catch (Exception $e) { // Sinon on affiche l'erreur 
             $this->erreur($e->getMessage());
         }

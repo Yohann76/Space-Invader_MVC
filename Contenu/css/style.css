@@ -4,24 +4,22 @@ body {
     background-color : black; 
 }
 
-
 p {
     color : white ; 
     text-align: center ;
 }
-/* nav */ 
 
 h1 {
     color : rgb(0, 162, 232) ; 
     text-align: center ; 
-    font-family:'Lobster Two'; /* police a garder */
+    font-family:'Lobster Two'; 
     font-size: 50px ; 
 }
 
 h2 {
     color : white ; 
     text-align: center ; 
-    font-family:'Lobster Two'; /* police a garder */
+    font-family:'Lobster Two'; 
     font-size: 30px ; 
 }
 nav {
@@ -42,17 +40,12 @@ nav li {
     height : 40px ; 
     margin: 0px ; 
     padding: 0px ; 
-  /*  border-right: 1px solid white; 
-    border-bottom: 1px solid white;
-    border-left: 1px solid white; */
-
 
     line-height: 40px ; 
     text-align: center ;
 }
 
 nav li:hover {
-  /*  background:#ffc013  ; */
     background: rgb(0, 162, 232) ; 
     padding-left: 20px;
     width: 130px;
@@ -60,14 +53,13 @@ nav li:hover {
     -webkit-transition: all .5s; 
     -o-transition: all .5s; 
     transition: all .5s;
-   /* border : 1px white solid ; */
 }
 
 nav li a{
     text-decoration: none ; 
     color : white ; 
     display: block ; 
-    font-family:'Lobster Two'; /* police a garder */
+    font-family:'Lobster Two'; 
     font-size: 20px ; 
 }
 
@@ -75,7 +67,6 @@ nav li a:hover {
     text-decoration: none ; 
     color : white; 
 }
-
 
 .LienNav {
     color : white ; 
@@ -90,13 +81,10 @@ nav li a:hover {
    
 }
 
-/* end nav */
 header {
-  /*  border : 2px white solid ;  */
     padding: 10px ; 
     margin-bottom: 30px ; 
 }
-
 
 footer {
     border : 2px white solid ; 
@@ -112,9 +100,8 @@ footer {
     display: block;
 }
 
-
 #interface {
-  /*  border : 1px white solid ; */
+  
 }
 
 #score { /* dans la div de l'acceuil */ 

@@ -25,6 +25,7 @@ class admin extends Modele {
     public function  ConnexionMembreReqMDP($MDPConnexionMembre) {  // == a $verifMDP
         // on cherche si le cryptage de mdpconnexion membre et présent dans hash_validation 
         $sql = 'SELECT * FROM membres WHERE mot_de_passe = :MDPhash'  ;
+        // $sql = 'SELECT * FROM membres WHERE hash_validation AND mot_de_passe = :MDPhash'  ;  
 
         $TabMdpMembre = $this->executerRequete($sql, array('MDPhash'=>$MDPConnexionMembre)); // tableau assiociatif
         $userMDP = $TabMdpMembre->fetch() ;  // transorme pdo 

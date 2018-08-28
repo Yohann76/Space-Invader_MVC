@@ -6,22 +6,16 @@
         <META charset="utf-8" />
         <link rel="icon" href="favicon.ico" />  
         <title><?= $titre ?></title>
-        
-		
         <!-- Script --> 
         <script src="Contenu/js/jquery-3.2.1.js"> </script>       <!-- Bibliotheque JavaScript Jquery   --> 
                                                                   
-
-
         <!-- Cascading Style Sheets -->
         <link rel="stylesheet" href="Contenu/css/style.css" /> 
         <link rel="stylesheet" href="Contenu/css/style.min.1024.css" /> <!-- Max-Width 1024 --> 
 		
-        
 		<META NAME="keywords" CONTENT="SpaceInvader,Jeux,Game" />
         <META name="description" content="Space Invaders des temps moderne , remis au gout du jour, Space invaders vous offrent une expérience de jeux 
-        incomparable !" />
-										
+        incomparable !" />							
         <!-- Viewport pour enlever le dezoom sur mobile -->   
         <META name="viewport" content="width=device-width,initial-scale=1.0,shrink-to_fit=no" />          
         <!-- FONT AWESOME -->
@@ -47,9 +41,6 @@
     </nav> 
 
 	<header>	
-    <!--
-    <img class="center" src="Contenu/images/titrespace.jpg">
-    -->
     <h1> Space Invaders </h1> 
     </header>
     
@@ -57,8 +48,6 @@
 
 	<!-- Contenu --> 
          <?= $contenu ?> <!-- #contenu -->  
-      
-
 	<!-- Fin contenu --> 
     
     

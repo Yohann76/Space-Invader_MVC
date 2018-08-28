@@ -39,21 +39,18 @@ class ControleurAccueil {
         $PseudoConnexionMembre =  $_POST['ConnexionPseudo'] ; 
         $MDPConnexionMembre =  $_POST['ConnexionMDP'] ;
         $VerifPseudo = $this->admin->ConnexionMembreReq($PseudoConnexionMembre);  
-
-        // ici 
+        
         $VerifMDP = $this->admin->ConnexionMembreReqMDP($MDPConnexionMembre);
         
         
             if ( $VerifPseudo == true && $VerifMDP == true )  {
-                // ici on met dans la session 
                 $_SESSION['loginMembre'] =  $VerifPseudo; 
                 $_SESSION['PasswordMembre'] = $VerifMDP ; 
-                // ici on met dans un cookie 
+               
                  setcookie('VerifPseudoCookie', $VerifPseudo , time() + 365*24*3600);  // Nom, valeur,expiration
                  setcookie('VerifMDPCookie', $VerifMDP , time() + 365*24*3600); 
                 $vue = new Vue("Accueil");    
                 $vue->generer(array());
-
            }
            else {       
             $vue = new Vue("Connexion");
@@ -65,8 +62,6 @@ class ControleurAccueil {
         $vue = new Vue("Inscription");
         $vue->generer(array());
     }
-    
-    
     public function EnvoieInscriptionMembre() {
         // recuperation du formulaire mis dans les variables 
         $PseudoMembre = htmlspecialchars($_POST['InscriptionPseudo']); // avec protection 
@@ -94,7 +89,6 @@ class ControleurAccueil {
             'ListeMeilleursscores' => $Top5meilleursscores,           
         ));
     }
-
     public function Compte() {
         // requete pour avoir les score du compte Selon l'id 
         $Pseudosql = $_COOKIE['VerifPseudoCookie']  ; 

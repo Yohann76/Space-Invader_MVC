@@ -13,10 +13,8 @@
                 <input type="text" name="InscriptionMail" id="inscription"    /> 
             <p> Mots de passe </p> 
                 <input type="password" name="InscriptionMDP" id="inscription"    /> 
-
                 <br/>
                 <br/>
-
                 <input type="submit" value="Je veux m'inscrire !" class="bouton_inscription" />
     </form>
 

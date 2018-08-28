@@ -12,9 +12,7 @@
             <p> Mots de passe </p> 
                 <input type="password" name="ConnexionMDP" id="inscription"    /> 
                 <br/>
-
                 <br/> 
-
                  <input type="submit" value="Me connecter !" class="bouton_inscription" />
     </form>
 
