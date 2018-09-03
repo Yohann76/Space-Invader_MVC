@@ -1,8 +1,5 @@
 <?php
-
-
  // Classe abstraite Modèle.
- 
 abstract class Modele {
 
     private $bdd;
