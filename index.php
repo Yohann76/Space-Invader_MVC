@@ -1,5 +1,5 @@
 <?php
-require 'Controleur/Routeur.php'; // a remplacer par un autoload  // a remettre pour que ca functionne 
+require 'Controleur/Routeur.php'; 
 
 session_start(); // Start session 
 

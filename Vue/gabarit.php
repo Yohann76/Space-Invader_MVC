@@ -54,15 +54,8 @@
     <footer>	
         <p> Jeux exclusif PC <br/>
         Pour sauvgarder votre score, vous devez vous connecté </p> 
-
         <h2> @YohannDurand OpenClassroom </h2> 
-
      </footer>
-
-
-
-   
-
-
+     
     </body>
 </html>

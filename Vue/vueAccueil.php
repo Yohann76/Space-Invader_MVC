@@ -8,7 +8,8 @@
 </div> 
 
     <script src="Contenu/js/phaser.min.js"></script>
-    <script src="Contenu/js/Space_Invader/GamePlay.js"></script>  
+    <script src="Contenu/js/GamePlay1.js"></script> 
+
 
 
 
