@@ -23,9 +23,9 @@ abstract class Modele {
         if ($this->bdd == null) {
         // Création de la connexion
         // Serveur :
-      //  $this->bdd = new PDO('mysql:host=openclasiqspace.mysql.db;dbname=openclasiqspace;charset=utf8','openclasiqspace', 'AlexandreXXX',
+         $this->bdd = new PDO('mysql:host=openclasiqspace.mysql.db;dbname=openclasiqspace;charset=utf8','openclasiqspace', 'AlexandreXXXX',
         // Localhost : 
-         $this->bdd = new PDO('mysql:host=localhost;dbname=membre;charset=utf8', 'root', '',
+      //   $this->bdd = new PDO('mysql:host=localhost;dbname=membre;charset=utf8', 'root', '',
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         }
         return $this->bdd;
