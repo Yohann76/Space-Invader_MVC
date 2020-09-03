@@ -1,25 +1,27 @@
 # Space-Invader_MVC
 
-Projet 5 de la formation DWJ sur OC
+Welcome to Space-Invader !
 
-Descriptif :
-Ce site utilisant html,css,Mysql,PHP,et Javascript est une application de jeux
-Le jeux se trouve sur la page d'accueil
+Application developped by Yohann Durand
+Student Project
 
-Space Invader remis au gout du jour se joue simplement avec les fléches directionelles du clavier et la touche "SPACE"
+## Technology 
 
-Le site se compose de plusieurs pages : 
+This architecture proposes a reutilisable code and easy to maintain. It also provides good practice like MVC layout and object oriented
 
-Accueil ( le jeux ) 
-Connexion ( pour que votre score soit enregistrer ) 
-Inscription ( pour inscrire un nouvelle utilisateur )
-Les scores ( le tableau des scores tout compte confondue ) 
-Mon compte ( les scores et meilleurs scores lié au compte ) 
+ - Phaser.io
+ - PHP7 
+ - MySQL
 
-Pour jouer il suffit de se rendre sur la page d'accueil, de cliquer sur le bouton play et le jeux se lance automatiquement
-Vous allez ensuite perdre quand les monstres touche les abris ou la navette, le jeux s'arréte automatiquement, pour rejouer il suffit de le relancer en cliquant sur la touche Play de nouveau.
+## Use this project 
+How to use this project on your environment ? 
 
+-  clone this project on your environment 
+-  git clone https://github.com/Yohann76/Space-Invader_MVC
 
+## Other information 
+Visit our website for more informations
 
-
+Standard :
+1. PSR2 ( https://www.php-fig.org/psr/psr-2/ )
 
